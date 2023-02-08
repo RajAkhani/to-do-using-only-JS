@@ -257,7 +257,7 @@ editId = (edit_id) => {
 	TaskObj.items[indexNum].edit = 1;
 	localStorage.removeItem('obj');
 	localStorage.setItem('obj',JSON.stringify(TaskObj.items));
-	window.location.href="file:///home/raj/Desktop/to-do%20list/index.html";
+	window.location.href="https://rajakhani.github.io/to-do-using-only-JS/";
 	
 }
 
@@ -355,5 +355,5 @@ check = () => {
 reset = () => {
 	localStorage.removeItem('obj');
 	alert("List has been reseted");
-	window.location.href="file:///home/raj/Desktop/to-do%20list/index.html";
+	window.location.href="https://rajakhani.github.io/to-do-using-only-JS/";
 }

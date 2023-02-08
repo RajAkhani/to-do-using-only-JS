@@ -1,0 +1,109 @@
+// let eId ="";
+// editId = (edit_id) => {
+// 	eId = edit_id;
+// 	let indexNum = 0;
+// 	TaskObj.items = JSON.parse(localStorage.getItem('obj'));
+// 	for(i=0;i<TaskObj.items.length;i++){
+// 		let str = TaskObj.items[i].id;
+// 		if(str.slice(-1) == eId.slice(-1)){
+// 			indexNum = TaskObj.items[i].index;
+// 		}
+// 	}
+// 	TaskObj.items[indexNum].add = 0;
+// 	TaskObj.items[indexNum].edit = 1;
+// 	localStorage.removeItem('obj');
+// 	localStorage.setItem('obj',JSON.stringify(TaskObj.items));
+// 	window.location.href="file:///home/raj/Desktop/to-do%20list/index.html";
+// 	// console.log('hi');
+// 	// let addButton= $("#addButton");
+// 	// let updateButton = $("#update");
+// 	// let name = $("#addName");
+// 	// let desc = $("#addDescription");
+// 	// let status = $("#status");
+// 	// let sDate = $("#startDate");
+// 	// let eDate = $("#endDate");
+// 	// updateButton.show();
+// 	// addButton.hide();
+// 	// let indexNum=0;
+// 	// TaskObj.items = JSON.parse(localStorage.getItem('obj'));
+// 	// for(i=0;i<TaskObj.items.length;i++){
+// 	// 	let str = TaskObj.items[i].id;
+// 	// 	if(str.slice(-1) == eId.slice(-1)){
+// 	// 		indexNum = TaskObj.items[i].index;
+// 	// 	}
+// 	// }
+// 	// name.val()=TaskObj.items[indexNum].name;
+// 	// desc.val()=TaskObj.items[indexNum].description;
+// 	// status.val()=TaskObj.items[indexNum].status;
+// 	// sDate.val()=TaskObj.items[indexNum].start;
+// 	// eDate.val()=TaskObj.items[indexNum].end;
+	
+// }
+
+// editUpdate = (indexNumber) => {
+// 	let addButton= $("#addButton");
+// 	let updateButton = $("#update");
+// 	// let name = $("#addName");
+// 	// let desc = $("#addDescription");
+// 	// let status = $("#status");
+// 	// let sDate = $("#startDate");
+// 	// let eDate = $("#endDate");
+// 	updateButton.show();
+// 	addButton.hide();
+// 	TaskObj.items=JSON.parse(localStorage.getItem('obj'));
+// 	// name.val()=TaskObj.items[indexNumber].name;
+// 	// desc.val()=TaskObj.items[indexNumber].description;
+// 	// status.val()=TaskObj.items[indexNumber].status;
+// 	// sDate.val()=TaskObj.items[indexNumber].start;
+// 	// eDate.val()=TaskObj.items[indexNumber].end;
+	
+// }
+
+
+// editItem = () => {
+// 	let name = $("#addName");
+// 	let desc = $("#addDescription");
+// 	let status = $("#status");
+// 	let sDate = $("#startDate");
+// 	let eDate = $("#endDate");
+// 	let indexNum=0;
+// 	TaskObj.items = JSON.parse(localStorage.getItem('obj'));
+// 	for(i=0;i<TaskObj.items.length;i++){
+// 		if(TaskObj.items[i].id.slice(-1) == eId.slice(-1)){
+// 			indexNum = TaskObj.items[i].index;
+// 		}
+// 	}
+
+// 	if(name.val()!=""){
+// 		TaskObj.items[indexNum].name = name.val();
+// 	}
+// 	if(desc.val()!=""){
+// 		TaskObj.items[indexNum].description = desc.val();	
+// 	}
+// 	if(status.val()!=""){
+// 		TaskObj.items[indexNum].status = status.val();
+// 	}
+// 	if(sDate.val()!=""){
+// 		TaskObj.items[indexNum].start = sDate.val();
+// 	}
+// 	if (eDate.val()!="") {
+// 		TaskObj.items[indexNum].end = eDate.val();
+// 	}
+// 	TaskObj.items[indexNum].edit = 0;
+// 	TaskObj.items[indexNum].add = 1;
+// 	localStorage.removeItem('obj');
+// 	localStorage.setItem('obj', JSON.stringify(TaskObj.items));
+// 	console.log(TaskObj);
+// }
+
+// check = () => {
+// 	TaskObj.items = JSON.parse(localStorage.getItem('obj'));
+// 	let indexNumber=0;
+// 	for(i=0;i<TaskObj.items.length;i++){
+// 		if(TaskObj.items[i].add==0&&TaskObj.items[i].edit==1){
+// 			indexNumber=i;
+// 			editUpdate(indexNumber);
+// 			break;
+// 		}
+// 	}
+// }

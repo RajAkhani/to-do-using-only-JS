@@ -1,0 +1,48 @@
+/*main page*/
+#header{
+
+}
+
+.flex-box {
+	display: flex;
+}
+
+#buttons {
+	margin-top: 10px;
+}
+
+.flex-items {
+/*	margin-left: 5px;*/
+	margin-right: 5px;
+	padding: 5px;
+}
+
+.label {
+	font-weight: bold;
+	font-size: 120%;
+}
+
+.input {
+	padding: 5px;
+	margin-top: 5px;
+}
+
+/*list page*/
+.itemContainer{
+	display: flex;
+}
+.list-item{
+	width: 15%;
+	border: 2px solid grey;
+}
+
+.list-head{
+	display: flex;
+	margin: 10px;
+}
+.head-item{
+	width: 15%;
+	font-weight: bold;
+	color: seagreen;
+	border: 2px solid black;	
+}

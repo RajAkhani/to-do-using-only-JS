@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To-Do List</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body onload="check()">
+	<section id="header">
+		<h2 style="color: mediumslateblue; ">Add Items</h2>
+		<div class="flex-box" >
+			<div class="flex-items"><label class="label">Name <span style="color: red; font-size: 15px; font-weight: 100;">*</span></label>
+			<input type="text" name="addName" id="addName" placeholder="Task Name" maxlength="20" class="input">
+			<p id="emptyName" style="color: red; display: none;">*Name Must not be empty</p>
+			<p id="invalidName" style="color: red; display: none;">*Invalid Name(Must start with alphabet)</p></div>
+			<br><br>
+			<div class="flex-items"><label class="label">Description</label>
+			<input type="text" name="addDescription" id="addDescription" placeholder="Description" maxlength="100" class="input"></div>
+			<br><br>
+			<div class="flex-items"><label class="label">Status <span style="color: red; font-size: 15px; font-weight: 100;">*</span></label>
+			<select class="input" id="status">
+				<option>Active</option>
+				<option>Inactive</option>
+				<option>Completed</option>
+			</select></div>
+			<br><br>
+			<div class="flex-items"><label class="label">Start Date <span style="color: red; font-size: 15px; font-weight: 100;">*</span></label>
+			<input type="date" id='startDate' class="input">
+			<p id="emptySdate" style="color: red; display: none;">*start date must not be empty</p></div>
+			<br><br>
+			<div class="flex-items"><label class="label">End Date <span style="color: red; font-size: 15px; font-weight: 100;">*</span></label>
+			<input type="date" id='endDate' class="input">
+			<p id="emptyEdate" style="color: red; display: none;">*end date must not be empty</p></div>
+			<br><br></div>
+
+			<p id="invalidDate" style="color: red; display: none;">*end date cant be before start date</p>
+			<div class="flex-box" id="buttons">
+			<button id="addButton" onclick="addItem()" class="flex-items">Add</button></a>
+			<button onclick='editItem()' style="display: none;" id="update" class="flex-items">Update</button><br>
+		<a href="list_page.html"><button class="flex-items">All List</button></a></div><br><br>
+
+		<div style="color: red; font-size: 15px;">* Mandatory feilds</div>
+		<!-- <p id="added" style="display: none; color: royalblue;">** Your task has been added</p>
+		<p id="updated" style="display: none; color: royalblue;">** Your task has been updated</p> -->
+	</section>
+	<!-- <br><br><hr size="3" style="background: black; border-color: black; opacity: 50%;"><br> -->
+
+
+
+
+
+
+	<script type="text/javascript" src="script/localstorage.js"></script>
+	<script type="text/javascript" src="script/script.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+</html>
